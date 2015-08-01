@@ -17,7 +17,7 @@ public class EmirpNumbers {
 				}
 
 			}
-			if (isPrime && i!=1) {					
+			if (isPrime && i>9) {					//emirp are numbers have to be two digits minimum
 				counter++;
 				reverse(i);							//we're invoking reverse method that will print numbers backwards
 				if(counter%10==0)					//every ten numbers we go to new line
