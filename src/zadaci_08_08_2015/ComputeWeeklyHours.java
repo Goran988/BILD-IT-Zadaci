@@ -29,8 +29,9 @@ public class ComputeWeeklyHours {
 			workers[i] += sum + " hours, employee number " + i;			//we add to string array total hours and names of workers
 			System.out.println();
 		}
+		System.out.println();
 		Arrays.sort(workers);											//sorting will use hours as primary condition
-		for (int i = 0; i < workers.length; i++) {						//printing out elements of the string array
+		for (int i = workers.length-1; i >= 0; i--) {					//printing out elements of the string array reversed order
 			System.out.println(workers[i]);
 		}
 
