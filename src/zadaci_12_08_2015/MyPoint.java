@@ -13,7 +13,7 @@ public class MyPoint {
 	double y;
 
 	// default constructor that sets values of x and y to 0
-	MyPoint() {
+	public MyPoint() {
 		x = 0;
 		y = 0;
 	}
@@ -25,8 +25,28 @@ public class MyPoint {
 	 * @param y
 	 *            sets value for the y coordinate
 	 */
-	MyPoint(double x, double y) {
+	public MyPoint(double x, double y) {
 		this.x = x;
+		this.y = y;
+	}
+
+	// get method for x data field
+	public double getX() {
+		return x;
+	}
+
+	// set method for x data field
+	public void setX(double x) {
+		this.x = x;
+	}
+
+	// get method for y data field
+	public double getY() {
+		return y;
+	}
+
+	// set method for y data field
+	public void setY(double y) {
 		this.y = y;
 	}
 
